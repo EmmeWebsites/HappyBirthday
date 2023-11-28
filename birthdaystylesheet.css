@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Template</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+  column-count: 3;
+}
+
+
+
+/* Background image and font */
+body {
+  -webkit-flex: 3;
+  -ms-flex: 3;
+  font-family: Arial;
+  background-image: url('background.jpg');
+  background-size: cover;
+
+}
+
+
+/* Style the header */
+header {
+
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #601481 ;
+  border-radius: 15px;
+  padding: 15px;
+  text-align: left 100px;
+  text-indent: 50px;
+  font-size: 30px;
+  color: white;
+  border-color: #BFE8FF;
+  margin: 10px;
+  margin-left:30px;
+  margin-right: 30px;
+  margin-top:30px;
+  column-count: 3;
+
+
+
+/* Grid for the naviagtion to be in the header*/
+#grid-container {
+  
+  display: grid;
+  grid-template-columns: 90px 90px 90px;
+  gap: 35px;
+  align-items: left;
+  padding: 0px;
+  margin: 20px;
+  
+}
+
+/* Design of navigation */
+#grid-container > div {
+
+  background-color: #CA81E9 ;
+  font-size: 12px;
+  color: #CA81E9;
+  height: 60px;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 11px;
+  margin-top: 15px;
+   
+}
+
+}
+
+/* Allowing the text and photos to move when the page resized. */
+section {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  column-count: 3;
+  
+}
+
+
+
+a { 
+text-decoration: underline; 
+color: white; 
+	}
+
+a:hover { 
+text-decoration: underline; 
+color: blue; 
+	}
+
+
+/* Style the content */
+article {
+
+
+  background-color: #601481 ;
+  padding: 20px;
+  padding-top: 5px;
+  margin:50px;
+  margin-top:10px;
+  margin-right: 20px;
+  margin-left: 35px;
+  width: 335px;
+  min-width: 335px;
+  height: 250px;
+  color: white;
+  font-size: 22px;
+  border: solid;
+  border-width: 5px;
+  border-color: #BFE8FF;
+  border-radius: 10px;
+  line-height: 25px;
+
+  
+}
+  
+
+
+/*size and placing for school value photo */
+#image1 {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	display:flex;
+	margin: 10px;
+	margin-top: -140px;
+	margin-left: 50px;
+	margin-right: 20px;
+	width: 230spx;
+	height: 410px;
+    border: solid;
+	border-width: 5px;
+    border-color: #BFE8FF;
+	border-radius: 10px;
+}
+
+#image2 {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	display:flex;
+	margin: 10px;
+	margin-top: -7px;
+	margin-left: 35px;
+	margin-right: 20px;
+	width: 205spx;
+	height: 275px;
+    border: solid;
+	border-width: 5px;
+    border-color: #BFE8FF;
+	border-radius: 10px;
+}
+
+
+#image3 {
+	-webkit-flex: 3;
+	-ms-flex: 3;
+	display:flex;
+	margin: 10px;
+	margin-top: 0px;
+	margin-left: 35px;
+	margin-right: 20px;
+	width: 182spx;
+	height: 224px;
+    border: solid;
+	border-width: 5px;
+    border-color: #BFE8FF;
+	border-radius:10px;
+}
+
+/* Style of the footer */
+footer {
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #601481  ;
+  padding-left: 20px;
+  font-size: 15px;
+  color: white;
+  margin: 35px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  max-width: 700px;
+  height: 93px;
+  border: solid;
+  border-width: 5px;
+  border-color: #BFE8FF;
+  
+  background-image: url('happybirthdaymusic.jpg');
+  background-size: cover;
+  
+  
+  
+}
+
+@media (max-width: 600px) {
+  section {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
